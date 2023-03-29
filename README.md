@@ -1,1 +1,1 @@
-# Верстка интернет магазина под CMS Bitrix - Akozner 
+# Верстка интернет магазина под CMS Wordpress - Akozner 
