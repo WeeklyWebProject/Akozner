@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+  @@include('html/head.html', { "title": "Оформление заказа" })
+  <body>
+    <div id="wrapper" class="wrapper wrapper--color">
+      @@include('html/header.html', {}) 
+      <main>
+        <div class="checkout">
+          <div class="container">
+            <div class="checkout__wrap">
+              <h1 class="checkout__title">оформление заказа</h1>
+              <form id="checkout-form" action="" method="post" class="checkout-form">
+                <div class="checkout-form__left"> 
+                  <h3 class="checkout-form__title">Способ получения заказа</h3>
+                  <div class="checkout-form__row">
+                    <label for="delivery" class="checkout-form__label">
+                      <input type="radio" name="type-delivery" id="delivery" class="checkout-form__check" value="Доставка" checked>
+                      <label for="delivery" class="checkout-form__box"></label>
+                      <span>Доставка</span>
+                    </label>
+                    <label for="pickup" class="checkout-form__label">
+                      <input type="radio" name="type-delivery" id="pickup" class="checkout-form__check" value="Самовывоз" >
+                      <label for="pickup" class="checkout-form__box"></label>
+                      <span>Самовывоз</span>
+                    </label>
+                  </div>
+                  <div class="checkout-form__select select ">
+                    <div class="select__top"> 
+                      <input type="hidden" class="select__value" value="CДЭК">
+                      <span class="select__title">CДЭК</span>
+                    </div>
+                    <ul class="select__inner">
+                      <li class="select__item select-focused">CДЭК</li>
+                      <li class="select__item">CДЭК 2</li>
+                      <li class="select__item">CДЭК 3</li>
+                    </ul>
+                  </div>
+                  <div class="checkout-form__field">
+                    <input type="text" name="form-name" id="form-name" class="checkout-form__input" placeholder="Имя">
+                  </div>
+                  <div class="checkout-form__field">
+                    <input type="text" name="form-lastname" id="form-lastname" class="checkout-form__input" placeholder="Фамилия">
+                  </div>
+                  <div class="checkout-form__field">
+                    <input type="text" name="form-phone" id="form-phone" class="checkout-form__input" placeholder="Телефон">
+                  </div>
+                  <div class="checkout-form__field">
+                    <input type="email" name="form-email" id="form-email" class="checkout-form__input" placeholder="Email">
+                  </div>
+                  <h3 class="checkout-form__title checkout-margin">Адрес доставки</h3>
+                  <div class="checkout-form__field">
+                    <input type="text" name="form-adress" id="form-adress" class="checkout-form__input" placeholder="Введите адрес">
+                  </div>
+                  <div class="checkout-form__field">
+                    <input type="text" name="form-home" id="form-home" class="checkout-form__input" placeholder="Номер квартиры/офиса">
+                  </div>
+                </div>
+                <div class="checkout-form__right checkout-right">
+                  <div class="checkout-right__box">
+                    <div class="checkout-right__inner">
+                      <label for="offline" class="checkout-right__label">
+                        <input type="radio" name="pay" id="offline" class="checkout-right__payment" value="При получении" checked> 
+                        <span>При получении</span>
+                      </label>
+                      <label for="online" class="checkout-right__label">
+                        <input type="radio" name="pay" id="online" class="checkout-right__payment" value="Онлайн">
+                        <span>Онлайн</span>
+                      </label>
+                    </div>
+                    <div class="checkout-right__col">
+                      <label class="checkout-right__item">
+                        <input type="radio" name="type-payment" id="payment-cash" class="checkout-form__check" value="Наличный рассчёт" checked>
+                        <label for="payment-cash" class="checkout-form__box"></label>
+                        <span>Наличный рассчёт</span>
+                      </label>
+                      <label class="checkout-right__item">
+                        <input type="radio" name="type-payment" id="payment-acquiring" class="checkout-form__check" value="Интернет-эквайринг АО “АБ Россия”">
+                        <label for="payment-acquiring" class="checkout-form__box"></label>
+                        <span>Интернет-эквайринг АО “АБ Россия”</span>
+                      </label>
+                      <label class="checkout-right__item">
+                        <input type="radio" name="type-payment" id="payment-Cashless" class="checkout-form__check" value="Безналичный рассчёт">
+                        <label for="payment-Cashless" class="checkout-form__box"></label>
+                        <span>Безналичный рассчёт</span>
+                      </label>
+                    </div>
+                  </div> 
+                  <h3 class="checkout-form__title">Способ оплаты</h3>
+                  <div class="checkout-right__row">
+                    <span class="checkout-right__text">Заказ на сумму:</span>
+                    <span class="checkout-right__price">2500  ₽</span>
+                  </div>
+                  <div class="checkout-right__row">
+                    <span class="checkout-right__text">Доставка:</span>
+                    <span class="checkout-right__price">0  ₽</span>
+                  </div>
+                  <div class="checkout-right__row row-total">
+                    <span class="checkout-right__text">Итого к оплате:</span>
+                    <span class="checkout-right__total">2500  ₽</span>
+                  </div>
+                  <button type="submit" class="checkout-form__btn">оформить </button>
+                  <div class="checkout-form__field">
+                    <input type="text" name="form-comment" id="form-comment" class="checkout-form__input" placeholder="Комментарии к заказу">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html', {})
+      @@include('html/popup.html', {})
+    </div>
+    
+    <script src="js/lib/webp.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/dinamic-adaptive.js"></script>
+    <script src="js/app.min.js"></script> 
+    <script src="js/lib/wow.js"></script> 
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+  @@include('html/head.html', { "title": "Контакты" })
+  <body>
+    <div id="wrapper" class="wrapper">
+      @@include('html/header.html', {})
+      <main> 
+        <div class="contacts">
+            <div class="catalog__banner" style="background-image: url('./img/catalog-banner.jpg');">
+                <h1 class="catalog__title">Контакты</h1> 
+            </div>  
+            <div class="container">
+                <div class="contacts__wrap">
+                    <div class="contacts__row">
+                        <div class="contacts__item">
+                            <span>Почта:</span>
+                            <a href="mailto:9349825@gmail.com" class="contacts__link">9349825@gmail.com</a>
+                        </div>
+                        <div class="contacts__item">
+                            <span>Телефон</span>
+                            <a href="tel:+79679750538" class="contacts__link">+7 (967) 975 05 38</a> 
+                        </div>
+                        <div class="contacts__item">
+                            <a href="https://wa.me/+79679750538?" target="_blank" class="contacts__link">Написать нам WhatsApp</a> 
+                        </div>
+                    </div>   
+                    <div class="contacts__map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af6363bf713e5b8e3b2db007ced7a2fa3f82ed4193396ad1aad37865d79fcfc53&amp;source=constructor" width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div> 
+        </div>
+      </main>
+      @@include('html/footer.html', {})
+      @@include('html/popup.html', {})
+    </div>
+    
+    <script src="js/lib/webp.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/dinamic-adaptive.js"></script>
+    <script src="js/app.min.js"></script> 
+    <script src="js/lib/wow.js"></script> 
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

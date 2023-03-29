@@ -1,0 +1,242 @@
+// Обнуление
+@import "nullstyle";
+// Подключение шрифтов
+@import "fonts";
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+// Переменные 
+
+$maxWidthContainer: 1334px;
+// Базовые настройки
+
+:root {
+    margin: 0;
+    padding: 0; 
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 14px;
+}
+
+body {
+    width: auto;
+    height: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden; 
+    font-family: Raleway;  
+} 
+
+.no-scroll {
+    overflow: hidden
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 58px;
+
+    @media (max-width: 768px){
+        padding: 0 24px;
+    }
+    @media (max-width: 576px){
+        padding: 0 15px;
+    }
+}  
+.catalog__container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 100px; 
+
+    @media (max-width: 768px){
+        padding: 0 24px;
+    }
+    @media (max-width: 576px){
+        padding: 0 15px;
+    }
+}
+
+.title-block{
+    font-family: 'Tenor Sans';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase; 
+    color: #323232;
+
+    @media (max-width: 990px) {  
+        font-size: 35px;
+        line-height: 45px;
+    }
+    @media (max-width: 576px) {  
+        font-size: 26px;
+        line-height: 30px;
+    }
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px; 
+    color: #323232; 
+    opacity: 0.8;
+    @media (max-width: 990px) {  
+        font-size: 18px;
+        line-height: 21px;  
+    }
+    @media (max-width: 576px) {  
+        font-size: 16px;
+        line-height: 20px; 
+    }
+}
+
+.circle-word {
+    width: 270.84px;
+    height: 270.81px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        object-position: 50%   
+    }
+} 
+.rotate-right {
+    animation: rotateRight 35s linear infinite;
+}
+
+.rotate-left {
+    animation: rotateLeft 35s linear infinite;
+}
+
+.title-2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;  
+    color: #000000;
+    @media (max-width: 576px) {
+        font-size: 16px;
+        line-height: 20px;   
+    }
+}
+
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px; 
+    color: #000000;
+    @media (max-width: 576px) {
+        font-size: 15px;
+        line-height: 19px;   
+    }
+}
+
+.text-small {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; 
+    color: #000000;
+    @media (max-width: 576px) {
+        font-size: 13px;
+        line-height: 17px;   
+    }
+}
+ 
+
+.wrapper {
+    
+    @media (max-width: 576px){
+        overflow: hidden;
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 47px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+
+    // .breadcrumbs__item
+
+    &__item {
+    }
+
+    // .breadcrumbs__link
+
+    &__link {
+        position: relative;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.175em; 
+        color: #868686; 
+        opacity: 0.96;
+        transition: all .35s ease;
+        padding-right: 8px;
+        margin-right: 8px;
+        &:after {
+            content: '/';
+            position: absolute;
+            top: 60%;
+            right: -4px;
+            transform: translateY(-50%);
+        }
+        &:hover {
+            opacity: 1;
+            color: #8C1A35;;
+        }
+    }
+
+    // .breadcrumbs__text
+
+    &__text {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.175em; 
+        color: #868686; 
+        opacity: 0.96;
+    }
+}
+
+.wishlist-added svg path {
+    fill: #8c1a35;
+    stroke: #8c1a35;
+}
+
+.logo-black{
+    display: none;
+}
+.wrapper--color{
+    .logo-whith{
+        display: none; 
+    }
+    .logo-black{
+        display: block;
+        object-fit: contain
+
+    }
+}
+ 
+
+
+// Подключение стилей 
+@import "header";
+@import "index"; 
+@import "catalog"; 
+@import "aboutus"; 
+@import "buyers"; 
+@import "checkout"; 
+@import "cart"; 
+@import "contacts"; 
+@import "card"; 
+@import "constructor"; 
+@import "popup"; 
+@import "footer"; 
+@import "swiper"; 
+@import "wow"; 
+@import "animation"; 

@@ -1,0 +1,13 @@
+import * as allfunctions from "./modules/functions.js";
+allfunctions.sliders();
+allfunctions.galleryHoverEffects();
+allfunctions.catalogSlider();
+allfunctions.select();
+allfunctions.counter();
+allfunctions.cardPreviewSlider();
+allfunctions.spoilerSize();
+allfunctions.spoilerType();
+allfunctions.openParametrs();
+allfunctions.constructor('#constructor-top');
+allfunctions.constructor('#constructor-bottom');
+allfunctions.burgerMenu(); 

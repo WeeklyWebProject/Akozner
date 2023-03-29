@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="pl">
+  @@include('html/head.html', { "title": "Конструктор" })
+  <body>
+    <div id="wrapper" class="wrapper wrapper--color">
+      @@include('html/header.html', {})  
+      <main class="constructor">
+        <div class="container">
+            <h1 class="constructor__title">
+                конструктор 
+            </h1>
+            <form id="constructor-form" method="post" class="constructor__wrap">
+                <div class="constructor__left constructor-left">
+                    <div id="constructor-top" class="constructor-left__top ">
+                        <div class="constructor-left__title spoiler-btn active">
+                            верх
+                        </div>
+                        <div class="constructor-left__col spoiler-body open"> 
+                            <div class="constructor-left__inner margin-none">
+                                <div class="constructor-left__row">
+                                    <span class="constructor-left__step margin-none">1/9</span>
+                                    <div class="constructor-left__text margin-none">Выберите цвет</div>
+                                </div>
+                                <div class="constructor-colors">
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color" id="color-1" class="constructor-colors__radio" value="Цвет 1">
+                                        <label for="color-1" class="constructor-colors__color" style="background: #ECE8E7;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color" id="color-2" class="constructor-colors__radio" value="Цвет 2">
+                                        <label for="color-2" class="constructor-colors__color" style="background: #B0AC9F;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color" id="color-3" class="constructor-colors__radio" value="Цвет 3">
+                                        <label for="color-3" class="constructor-colors__color" style="background: #D07272;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color" id="color-4" class="constructor-colors__radio" value="Цвет 4">
+                                        <label for="color-4" class="constructor-colors__color" style="background: #77B588;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color" id="color-5" class="constructor-colors__radio" value="Цвет 5">
+                                        <label for="color-5" class="constructor-colors__color" style="background: #F0F898;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color" id="color-6" class="constructor-colors__radio" value="Цвет 6">
+                                        <label for="color-6" class="constructor-colors__color" style="background: #C16262;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color" id="color-7" class="constructor-colors__radio" value="Цвет 7">
+                                        <label for="color-7" class="constructor-colors__color" style="background: #ECE8E7;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color" id="color-8" class="constructor-colors__radio" value="Цвет 8">
+                                        <label for="color-8" class="constructor-colors__color" style="background: #B0AC9F;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color" id="color-9" class="constructor-colors__radio" value="Цвет 9">
+                                        <label for="color-9" class="constructor-colors__color" style="background: #D07272;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color" id="color-10" class="constructor-colors__radio" value="Цвет 10">
+                                        <label for="color-10" class="constructor-colors__color" style="background: #77B588;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color" id="color-11" class="constructor-colors__radio" value="Цвет 11">
+                                        <label for="color-11" class="constructor-colors__color" style="background: #F0F898;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color" id="color-12" class="constructor-colors__radio" value="Цвет 12">
+                                        <label for="color-12" class="constructor-colors__color" style="background: #C16262;"></label>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">2/9</span> 
+                                <div class="constructor-left__text">Варианты фасона кофты</div>
+                                <div class="constructor-left__box">
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Классика ( по фигуре) приталенная модель
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Прямая (свободная) модель
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Оверсайз
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Целиком на молнии (прямая модель)+900р
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">3/9</span> 
+                                <div class="constructor-left__text">Варианты капюшона</div>
+                                <div class="constructor-left__box">
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Худи с классическим нахлестом
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Худи с большим нахлестом
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Худи с капюшоном “Рыцарь”
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Худи без капюшона (свитшот)
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">4/9</span> 
+                                <div class="constructor-left__text">Варианты плеча</div>
+                                <div class="constructor-left__box">
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Реглан
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Вточной
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Спущенный
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Приспущенный
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">5/9</span> 
+                                <div class="constructor-left__text">Варианты манжет</div>
+                                <div class="constructor-left__box constructor-box--five">
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Кашкорсе
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Подгиб
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Резинка
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Футер
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Обрезной край
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">6/9</span> 
+                                <div class="constructor-left__text">Варианты низа кофты</div>
+                                <div class="constructor-left__box constructor-box--five">
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Кашкорсе
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Подгиб
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Резинка
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Футер
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Обрезной край
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">7/9</span> 
+                                <div class="constructor-left__text">Варианты карманов кофты</div>
+                                <div class="constructor-left__box constructor-box--three">
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Кенгуру
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Карман в шве
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Без кармана
+                                        </div>
+                                    </label> 
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">8/9</span> 
+                                <div class="constructor-left__text">Варианты длины кофты</div>
+                                <div class="constructor-left__box constructor-box--three">
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Классическая модель
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Удлиненная модель
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Укороченная модель
+                                        </div>
+                                    </label> 
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">8/9</span> 
+                                <div class="constructor-left__text">материал</div>
+                                <div class="constructor-left__box constructor-box--two">
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Материал с начесом
+                                        </div>
+                                    </label>
+                                    <label  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Материал без начеса
+                                        </div>
+                                    </label> 
+                                </div>
+                            </div>
+                            <div class="constructor-left__size">
+                                <span class="constructor-left__step">9/9</span> 
+                                <div class="constructor-left__text soiler-size spoiler-active">размер</div>
+                                <div class="soiler-size__body spoiler-open">
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-0" name="size" class="soiler-size__radio" value="Размер 0">
+                                        <label for="size-0" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">0</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-1" name="size" class="soiler-size__radio" value="Размер 1">
+                                        <label for="size-1" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">1</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-2" name="size" class="soiler-size__radio" value="Размер 2">
+                                        <label for="size-2" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">2</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-3" name="size" class="soiler-size__radio" value="Размер 3">
+                                        <label for="size-3" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">3</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-4" name="size" class="soiler-size__radio" value="Размер 4">
+                                        <label for="size-4" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">4</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-5" name="size" class="soiler-size__radio" value="Размер 5">
+                                        <label for="size-5" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">5</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-6" name="size" class="soiler-size__radio" value="Размер 6">
+                                        <label for="size-6" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">6</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-7" name="size" class="soiler-size__radio" value="Размер 7">
+                                        <label for="size-7" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">7</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-8" name="size" class="soiler-size__radio" value="Размер 8">
+                                        <label for="size-8" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">8</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="constructor-left__wrap">
+                                <a href="#" class="constructor-left__link">Как правильно сделать замер</a>
+                                <a href="#" class="constructor-left__link">Таблица размеров</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="constructor-bottom" class="constructor-left__down ">
+                        <div class="constructor-left__title spoiler-btn">
+                            низ
+                        </div>
+                        <div class="constructor-left__col spoiler-body"> 
+                            <div class="constructor-left__inner margin-none">
+                                <div class="constructor-left__row">
+                                    <span class="constructor-left__step margin-none">1/9</span>
+                                    <div class="constructor-left__text margin-none">Выберите цвет</div>
+                                </div>
+                                <div class="constructor-colors">
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color-bottom" id="color-bottom-1" class="constructor-colors__radio" value="Цвет 1">
+                                        <label for="color-bottom-1" class="constructor-colors__color" style="background: #ECE8E7;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color-bottom" id="color-bottom-2" class="constructor-colors__radio" value="Цвет 2">
+                                        <label for="color-bottom-2" class="constructor-colors__color" style="background: #B0AC9F;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color-bottom" id="color-bottom-3" class="constructor-colors__radio" value="Цвет 3">
+                                        <label for="color-bottom-3" class="constructor-colors__color" style="background: #D07272;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color-bottom" id="color-bottom-4" class="constructor-colors__radio" value="Цвет 4">
+                                        <label for="color-bottom-4" class="constructor-colors__color" style="background: #77B588;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color-bottom" id="color-bottom-5" class="constructor-colors__radio" value="Цвет 5">
+                                        <label for="color-bottom-5" class="constructor-colors__color" style="background: #F0F898;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color-bottom" id="color-bottom-6" class="constructor-colors__radio" value="Цвет 6">
+                                        <label for="color-bottom-6" class="constructor-colors__color" style="background: #C16262;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color-bottom" id="color-bottom-7" class="constructor-colors__radio" value="Цвет 7">
+                                        <label for="color-bottom-7" class="constructor-colors__color" style="background: #ECE8E7;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color-bottom" id="color-bottom-8" class="constructor-colors__radio" value="Цвет 8">
+                                        <label for="color-bottom-8" class="constructor-colors__color" style="background: #B0AC9F;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color-bottom" id="color-bottom-9" class="constructor-colors__radio" value="Цвет 9">
+                                        <label for="color-bottom-9" class="constructor-colors__color" style="background: #D07272;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color-bottom" id="color-bottom-10" class="constructor-colors__radio" value="Цвет 10">
+                                        <label for="color-bottom-10" class="constructor-colors__color" style="background: #77B588;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color-bottom" id="color-bottom-11" class="constructor-colors__radio" value="Цвет 11">
+                                        <label for="color-bottom-11" class="constructor-colors__color" style="background: #F0F898;"></label>
+                                    </label>
+                                    <label  class="constructor-colors__item">
+                                        <input type="radio" name="color-bottom" id="color-bottom-12" class="constructor-colors__radio" value="Цвет 12">
+                                        <label for="color-bottom-12" class="constructor-colors__color" style="background: #C16262;"></label>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">2/9</span> 
+                                <div class="constructor-left__text">Варианты фасона кофты</div>
+                                <div class="constructor-left__box">
+                                    <div  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Классика ( по фигуре) приталенная модель
+                                        </div>
+                                    </div>
+                                    <div  class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Прямая (свободная) модель
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Оверсайз
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Целиком на молнии (прямая модель)+900р
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">3/9</span> 
+                                <div class="constructor-left__text">Варианты капюшона</div>
+                                <div class="constructor-left__box">
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Худи с классическим нахлестом
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Худи с большим нахлестом
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Худи с капюшоном “Рыцарь”
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Худи без капюшона (свитшот)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">4/9</span> 
+                                <div class="constructor-left__text">Варианты плеча</div>
+                                <div class="constructor-left__box">
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Реглан
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Вточной
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Спущенный
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Приспущенный
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">5/9</span> 
+                                <div class="constructor-left__text">Варианты манжет</div>
+                                <div class="constructor-left__box constructor-box--five">
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Кашкорсе
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Подгиб
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Резинка
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Футер
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Обрезной край
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">6/9</span> 
+                                <div class="constructor-left__text">Варианты низа кофты</div>
+                                <div class="constructor-left__box constructor-box--five">
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Кашкорсе
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Подгиб
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Резинка
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Футер
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Обрезной край
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">7/9</span> 
+                                <div class="constructor-left__text">Варианты карманов кофты</div>
+                                <div class="constructor-left__box constructor-box--three">
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Кенгуру
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Карман в шве
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Без кармана
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">8/9</span> 
+                                <div class="constructor-left__text">Варианты длины кофты</div>
+                                <div class="constructor-left__box constructor-box--three">
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Классическая модель
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Удлиненная модель
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Укороченная модель
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="constructor-left__inner option" > 
+                                <span class="constructor-left__step">8/9</span> 
+                                <div class="constructor-left__text">материал</div>
+                                <div class="constructor-left__box constructor-box--two">
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Материал с начесом
+                                        </div>
+                                    </div>
+                                    <div class="constructor-left__item">
+                                        <div class="constructor-left__icon">
+                                            <img src="./img/constructor.png" alt="Картинка">
+                                        </div>
+                                        <div class="constructor-left__name">
+                                            Материал без начеса
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="constructor-left__size">
+                                <span class="constructor-left__step">9/9</span> 
+                                <div class="constructor-left__text soiler-size spoiler-active">размер</div>
+                                <div class="soiler-size__body spoiler-open">
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-0" name="size" class="soiler-size__radio" value="Размер 0">
+                                        <label for="size-0" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">0</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-1" name="size" class="soiler-size__radio" value="Размер 1">
+                                        <label for="size-1" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">1</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-2" name="size" class="soiler-size__radio" value="Размер 2">
+                                        <label for="size-2" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">2</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-3" name="size" class="soiler-size__radio" value="Размер 3">
+                                        <label for="size-3" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">3</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-4" name="size" class="soiler-size__radio" value="Размер 4">
+                                        <label for="size-4" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">4</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-5" name="size" class="soiler-size__radio" value="Размер 5">
+                                        <label for="size-5" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">5</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-6" name="size" class="soiler-size__radio" value="Размер 6">
+                                        <label for="size-6" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">6</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-7" name="size" class="soiler-size__radio" value="Размер 7">
+                                        <label for="size-7" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">7</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                    <label class="soiler-size__item">
+                                        <input type="radio" id="size-8" name="size" class="soiler-size__radio" value="Размер 8">
+                                        <label for="size-8" class="soiler-size__circle"></label>
+                                        <span class="soiler-size__number">8</span>
+                                        <span class="soiler-size__text">(обхват груди 84, обхват талии 62, обхват бёдер 92)</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="constructor-left__wrap">
+                                <a href="#" class="constructor-left__link">Как правильно сделать замер</a>
+                                <a href="#" class="constructor-left__link">Таблица размеров</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="additionally">
+                        <div class="additionally__text">
+                            рост 
+                        </div>
+                        <input type="text" id="growth" name="growth" class="additionally__growth">
+                        <div class="additionally__text">
+                            пожелания 
+                        </div>
+                        <div class="additionally__desc">
+                            Здесь вы можете указать дополнения к заказу:
+                            <ul class="additionally__list">
+                                <li class="additionally__item">кнопки на капюшоне (+250₽).</li>
+                                <li class="additionally__item">другой цвет капюшона или карманов (+250₽).</li>
+                                <li class="additionally__item">другой цвет элемента изделия (+250₽ за элемент).</li>
+                            </ul>
+                            Также если у вас есть особенности фигуры, то сообщите нам о них
+                        </div>
+                        <textarea name="comment" id="comment"  class="additionally__textarea"></textarea>
+                        <div class="additionally__text">
+                            особенности тела
+                        </div>
+                        <input type="text" name="body-features" name="body-features" class="additionally__body-features">
+                    </div>
+                </div>
+                <div class="constructor__right">
+                    <div class="constructor-form">
+                        <div class="constructor-form__text">
+                            Выбранная вами модель:
+                        </div>
+                        <div class="constructor-form__inner">
+                            <div class="constructor-form__top current-parametrs" data-parametrs="constructor-top">
+                                <span class="constructor-form__label">Верх:</span> 
+                            </div>
+                            <div class="constructor-form__down current-parametrs" data-parametrs="constructor-bottom">
+                                <span class="constructor-form__label">Низ:</span>  
+                            </div>
+                        </div>
+                        <div class="constructor-form__box">
+                            <div class="constructor-form__feild">
+                                <input type="text" id="form-name" name="form-name" class="constructor-form__input" placeholder="Имя" required>
+                            </div>
+                            <div class="constructor-form__feild">
+                                <input type="text" id="form-phone" name="form-phone" class="constructor-form__input" placeholder="Телефон" required>
+                            </div>
+                            <div class="constructor-form__feild">
+                                <input type="email" id="form-email" name="form-email" class="constructor-form__input" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="constructor-form__price">
+                            <span class="constructor-form__label">
+                                Итого: 
+                            </span>
+                            <span class="constructor-form__total">
+                                3 900 ₽
+                            </span>
+                        </div>
+                        <div class="constructor-form__controls">
+                            <button type="submit" class="constructor-form__send">отправить </button>
+                            <a href="" class="constructor-form__pay">оплатить </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </main>
+      @@include('html/footer.html', {})
+      @@include('html/popup.html', {})
+    </div> 
+    <script src="js/lib/webp.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/dinamic-adaptive.js"></script>
+    <script src="js/app.min.js"></script> 
+    <script src="js/lib/wow.js"></script> 
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
